@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(242, 242, 242);
+    font-family: 'Gruppo', 'Times New Roman', Times, serif;
+    list-style: none;
+
+}
+
+body{
+    background-image: url(img/background-img--1.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#webHeader{
+    background-color: rgb(243, 243, 243);
+    height: 50px;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+#webHeader h1{
+    font-family: 'Dancing Script',sans-serif;
+    letter-spacing: 2px;
+    margin: 0;
+    color: black;
+    padding: 8px;
+}
+
+#headerContainer h2{
+    font-size: 2.8em;
+    margin: 15px 6vw;
+}
+
+#headerContainer h3{
+    font-size: 1.4em;
+    margin: 15px 6vw;
+    margin-bottom: 40px;
+}
+
+#headerImg{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin: 25px 15px;
+    border: 3px solid rgb(243, 243, 243);
+    ;
+}
+
+/* ARTICLE */
+
+.InfoContainerCard{
+    width: 300px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 20px 12%;
+    border: 2px solid rgb(243, 243, 243);
+    transition: .9s;
+}
+
+.InfoContainerCard:hover{
+    background-color: rgb(0, 0, 0);
+    transform: translateY(-10px);
+    transition: .9s;
+}
+
+.InfoContainerCard ul {
+    cursor: pointer;
+}
+
+.InfoContainerCard ul li a{
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    margin: 20px 12%;
+}
+
+.infoImg{
+    width: 55px;
+    height: 55px;
+    background-color: white;
+    position: absolute;
+    margin: 15px 10px;
+    border-radius: 30px;
+}
+
+.InfoContainerCard h3{
+    font-size: 1.5em;
+    margin: 5px;
+    margin-left: 45%;
+}
+
+.InfoContainerCard h4{
+    font-size: 1.2em;
+    margin-left: 30%;
+}
+
+footer{
+    margin-top: 50px;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(243, 243, 243);
+}
+
+footer h4{
+    text-align: center;
+    font-size: 1em;
+    color: black;
+}
+
+@media (min-width: 500px) and (max-width:650px) {
+
+    .InfoContainerCard{
+        margin: 20px 25%;
+
+    }
+
+}
+
+@media (min-width: 650px) and (max-width:850px) {
+
+    .InfoContainerCard{
+        margin: 20px 35%;
+
+    }
+
+}
+
+@media (min-width: 850px) and (max-width:1000px) {
+
+    body{
+        background-image: url(img/background-img-tablet2.jpg);
+    }
+
+    .InfoContainerCard{
+        margin: 20px 35%;
+
+    }
+
+}
+
+@media (min-width: 1000px) and (max-width:3000px) {
+
+    body{
+        background-image: url(img/background-img1920.jpg);
+        background-repeat: repeat;
+        margin-left: 10rem;
+    }
+
+    #webHeader{
+        font-size: 1em;
+    }
+
+    #headerContainer h2{
+        color: black;
+        font-size: 2.5em;
+    }
+
+    #headerContainer h3{
+        color: black;
+        font-size: 1.8em;
+    }
+
+    .InfoContainerCard{
+        margin: 20px 40%;
+
+    }
+
+}
